@@ -12,6 +12,11 @@
 - 3:
   - cd /var/www/html
   - sudo nano index.html (Ctril+O to save , Press Enter , Ctrl+x to exit)
+  - (and add this content)
+  - <html>
+    <head><title>My Custom Page</title></head>
+    <body><h1>Welcome to My Custom Nginx Page!</h1></body>
+    </html>
 
 - 4:
   - sudo apt update
