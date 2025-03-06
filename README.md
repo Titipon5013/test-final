@@ -31,15 +31,15 @@
   - sudo docker pull nginx
   - sudo docker run --name mynginx -d -p 8080:80 nginx
 
-- 6:
+- 6: (On VM)
   - mkdir mynginx && cd mynginx   
   - docker pull timetitipon/mynginx-custom
-  - sudo docker run --name custom-nginx -d -p 8081:80 mynginx-custom (On VM)
+  - sudo docker run --name custom-nginx -d -p 8081:80 mynginx-custom 
 
-- 7:
+- 7: (on powershell vs code) 
   - docker build -t mynginx-custom .
   - docker tag mynginx-custom timetitipon/mynginx-custom
-  - docker push timetitipon/mynginx-custom (on powershell vs code) 
+  - docker push timetitipon/mynginx-custom 
 
 - 8:
   - mkdir ~/mywebsite
@@ -47,7 +47,7 @@
   - vi index.html (and copy content from question 3)
   - sudo docker run --name mapped-nginx -d -p 8082:80 -v ~/mywebsite:/usr/share/nginx/html nginx
 
-- 9:
+- 9: (on vs code / powershell)
   - mkdir ~/dockercompose && cd ~/dockercompose
   - docker-compose up -d
 
